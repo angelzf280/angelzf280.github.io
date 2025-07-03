@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Formulario de Hugo</title>
+    </head>
+    <body bgcolor="RED ">
+        <h1>Elementos del Formulario</h1>
+        <form action="a20340@imcori.edu.mx">
+        <table>
+            <tr>
+                <td>Nombre del Alumno(a):</td>
+                <td><input name="Alumno" type="text" size="45"></td>
+            </tr>
+            <tr>
+                <td>Años cumplidos:</td>
+                <td><input name="Edad" type="text" size="10" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td>Semestre:</td>
+                <td>Segundo<input name="Sem" type="radio"> <br>
+                    Cuarto<input name="Sem" type="radio"><br>
+                    Sexto<input name="Sem" type="radio">
+                </td>
+            </tr>
+            <tr>
+                <td>Grupo:</td>
+                <td><input name="gpo" type="radio" checked>A <br>
+                    <input name="gpo" type="radio"> B
+                </td>
+            </tr>
+            <tr>
+                <td>Área Propedéutica:</td>
+                <td><select name="area" id="area1">
+                    <option>Tronco Común</option>
+                    <option>Humanidades-Ciencias Sociales</option>
+                    <option>Económico Administrativo</option>
+                    <option>Químico Biológico</option>
+                    <option selected>Físico Matemático</option>
+                </td>
+            <tr>
+            <tr>
+                <td>Pasatiempo:</td>
+                <td><input name="div" type="checkbox">Ver TV <br>
+                    <input name="div" type="checkbox">Entrenar<br>
+                    <input name="div" type="checkbox">Dormir<br>
+                    <input name="div" type="checkbox" checked>Jugar
+                </td>
+            <tr>
+                <td>Palabra Secreta:</td>
+                <td><input name="pass" type="password"> 
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios:</td>
+                <td><textarea name="Comentarios"></textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td><input name="borrar" type="reset"> 
+                </td>
+            </tr>
+            </tr>
+        </table>
+        <center><input name="boton" type="button" value="DA CLIC"></center>
+        </form>
+        <h2>Incrustando Objetos en las P&aacute;ginas</h2>
+        <center>
+            <embed src="pantalla.mp4" width="800" height="500">
+        </center>
+        <h2>Visualizador de Documento</h2>
+        <center>
+            <object type="application/pdf"
+            data="html.pdf" style="width: 400px; height: 550px;"
+            ERROR (no puede mostrarse el objeto)
+        </object>
+        </center>
+        <h2>Visualizador de Videos Externo</h2>
+        <center>
+            <object type="application/x-shockwave-flash" data="https://www.youtube.com/watch?v=EgBJmlPo8Xw" style="width: 425px; height: 350px;">
+                <param name="movie"
+                value="https://www.youtube.com/watch?v=EgBJmlPo8Xw">
+                ERROR (no puede mostrarse el objeto)
+            </object>
+        </center>
+    </body>
+</html>

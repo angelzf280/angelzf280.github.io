@@ -1,0 +1,32 @@
+<HTML>
+ <HEAD>
+  <TITLE>Sitio web de Hugo</TITLE>
+  <style>
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+ </HEAD>
+
+ <FRAMESET ROWS="85%,15%" BORDER=2 BORDERCOLOR="#bdc3c7" NORESIZE>
+  <FRAMESET COLS="85%,15%">
+    <FRAME SRC="principal HAZF.html" NAME="contenido">
+    <FRAME SRC="menu HAZF.html">
+  </FRAMESET>
+  <FRAME SRC="licenciaa HAZF.html">
+ </FRAMESET>
+
+ <BODY bgcolor="RED">
+   <script>
+     document.addEventListener('contextmenu', event => event.preventDefault());
+     document.addEventListener('keydown', function(e) {
+       if (e.ctrlKey && ['c', 'x', 'v', 'u'].includes(e.key.toLowerCase())) {
+         e.preventDefault();
+       }
+     });
+   </script>
+ </BODY>
+</HTML>
